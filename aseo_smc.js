@@ -2,7 +2,7 @@ import puppeteer from "puppeteer";
 
 export async function aseo_smc(rol,dv){
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: 'new',
     args: [
       "--disable-setuid-sandbox",
       "--no-sandbox",
